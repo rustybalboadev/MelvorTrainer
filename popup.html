@@ -1,39 +1,108 @@
 <!--helloGuys MonkeyMan-->
 <html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
     <body>
-        <button id='addTenThousandSC'>Add 10,000 SlayerCoins</button>
-        <button id='addTenThousandGP'>Add 10,000 GP</button>
-        <button id='bankSlots'>Give Many Bank Slots</button><br><hr>
-        <!--Unlock Everything in the tab-->
-        <button id='allUnlockWoodCutting'>Unlock All WoodCutting</button>
-        <button id='allUnlockFishing'>Unlock All Fishing</button>
-        <button id='allUnlockFireMaking'>Unlock All FireMaking</button>
-        <button id='allUnlockCooking'>Unlock All Cooking</button>
-        <button id='allUnlockMining'>Unlock All Mining</button>
-        <button id='allUnlockSmithing'>Unlock All Smithing</button>
-        <button id='allUnlockThieving'>Unlock All Thieving</button>
-        <button id='allUnlockFarming'>Unlock All Farming</button>
-        <button id='allUnlockFletching'>Unlock All Fletching</button>
-        <button id='allUnlockCrafting'>Unlock All Crafting</button>
-        <button id='allUnlockRunecrafting'>Unlock All Runecrafting</button>
-        <button id='allUnlockHerblore'>Unlock All Herblore</button><br><hr>
-        <!--Unlock Masterys-->
-        <button id='allTreeMastery'>Unlock All Tree Mastery</button>
-        <button id='allFishMastery'>Unlock All Fish Mastery</button>
-        <button id='allCookingMastery'>Unlock All Cooking Mastery</button>
-        <button id='allFireMakingMastery'>Unlock All FireMaking Mastery</button>
-        <button id='allMiningMastery'>Unlock All Mining Mastery</button>
-        <button id='allSmithingMastery'>Unlock All Smithing Mastery</button>
-        <button id='allThievingMastery'>Unlock All Thieving Mastery</button>
-        <button id='allFarmingMastery'>Unlock All Farming Mastery</button>
-        <button id='allFletchingMastery'>Unlock All Fletching Mastery</button>
-        <button id='allCraftingMastery'>Unlock All Crafting Mastery</button>
-        <button id='allRuneCraftingMastery'>Unlock All Runecrafting Mastery</button>
-        <button id='allHerbloreMastery'>Unlock All Herblore Mastery</button><br><hr>
-
-        <!--Add Item to bank use this website for item id's https://wiki.melvoridle.com/index.php?title=Table_of_Items-->
-        <input id='idInput' placeholder="Item ID"><input id='idQuantity' placeholder="Amount"><button id='addToBank'>Add To Bank</button><button id='wiki'>Wiki</button>
-        
+        <section class="hero is-dark is-bold">
+            <div class="container has-text-centered">
+                <br>
+                <a href="https://melvoridle.com"><img src="icon/logo.png" width="46px" height="46px" alt="Open MelvorIdle"></a>
+                <br><br>
+            </div>
+            <hr>
+            <div class="tabs is-centered is-small">
+                <ul>
+                    <li class="is-active"><a>Bank</a></li>
+                </ul>
+            </div>
+            <div class="container has-text-centered" style="padding-left: 10px; padding-right: 10px;" id="Bank">
+                <p class="subtitle" style="font-size: small;">Warning: These do not save online! You must purchase things from the store and they will save.</p>
+                <button style="margin: 5px;" class="button is-rounded is-info is-small" id='addTenThousandSC'>Add 10,000 SlayerCoins</button>
+                <button style="margin: 5px;" class="button is-rounded is-info is-small" id='addTenThousandGP'>Add 10,000 GP</button>
+                <button style="margin: 5px;" class="button is-rounded is-info is-small" id='bankSlots'>Give Many Bank Slots</button>
+            </div>
+            <hr>
+            <br>
+            <div class="tabs is-centered is-small">
+                <ul>
+                    <li class="is-active"><a>Skills</a></li>
+                </ul>
+            </div>
+            <br>
+            <div class="container has-text-centered" style="padding-left: 10px; padding-right: 10px;" id="Skills">
+                <!--Unlock Everything in the tab-->
+                <button style="margin: 5px;" class="button is-rounded is-primary is-small" id='allUnlockWoodCutting'>Unlock All WoodCutting</button>
+                <button style="margin: 5px;" class="button is-rounded is-primary is-small" id='allUnlockFishing'>Unlock All Fishing</button>
+                <button style="margin: 5px;" class="button is-rounded is-primary is-small" id='allUnlockFireMaking'>Unlock All FireMaking</button>
+                <button style="margin: 5px;" class="button is-rounded is-primary is-small" id='allUnlockCooking'>Unlock All Cooking</button>
+                <button style="margin: 5px;" class="button is-rounded is-primary is-small" id='allUnlockMining'>Unlock All Mining</button>
+                <button style="margin: 5px;" class="button is-rounded is-primary is-small" id='allUnlockSmithing'>Unlock All Smithing</button>
+                <button style="margin: 5px;" class="button is-rounded is-primary is-small" id='allUnlockThieving'>Unlock All Thieving</button>
+                <button style="margin: 5px;" class="button is-rounded is-primary is-small" id='allUnlockFarming'>Unlock All Farming</button>
+                <button style="margin: 5px;" class="button is-rounded is-primary is-small" id='allUnlockFletching'>Unlock All Fletching</button>
+                <button style="margin: 5px;" class="button is-rounded is-primary is-small" id='allUnlockCrafting'>Unlock All Crafting</button>
+                <button style="margin: 5px;" class="button is-rounded is-primary is-small" id='allUnlockRunecrafting'>Unlock All Runecrafting</button>
+                <button style="margin: 5px;" class="button is-rounded is-primary is-small" id='allUnlockHerblore'>Unlock All Herblore</button>
+            </div>
+            <hr>
+            <br>
+            <div class="tabs is-centered is-small">
+                <ul>
+                    <li class="is-active"><a>Mastery</a></li>
+                </ul>
+            </div>
+            <br>
+            <div class="container has-text-centered" id="Mastery">
+                <!--Unlock Masterys-->
+                <button style="margin: 5px;" class="button is-rounded is-warning is-small" id='allTreeMastery'>Unlock All Tree Mastery</button>
+                <button style="margin: 5px;" class="button is-rounded is-warning is-small" id='allFishMastery'>Unlock All Fish Mastery</button>
+                <button style="margin: 5px;" class="button is-rounded is-warning is-small" id='allCookingMastery'>Unlock All Cooking Mastery</button>
+                <button style="margin: 5px;" class="button is-rounded is-warning is-small" id='allFireMakingMastery'>Unlock All FireMaking Mastery</button>
+                <button style="margin: 5px;" class="button is-rounded is-warning is-small" id='allMiningMastery'>Unlock All Mining Mastery</button>
+                <button style="margin: 5px;" class="button is-rounded is-warning is-small" id='allSmithingMastery'>Unlock All Smithing Mastery</button>
+                <button style="margin: 5px;" class="button is-rounded is-warning is-small" id='allThievingMastery'>Unlock All Thieving Mastery</button>
+                <button style="margin: 5px;" class="button is-rounded is-warning is-small" id='allFarmingMastery'>Unlock All Farming Mastery</button>
+                <button style="margin: 5px;" class="button is-rounded is-warning is-small" id='allFletchingMastery'>Unlock All Fletching Mastery</button>
+                <button style="margin: 5px;" class="button is-rounded is-warning is-small" id='allCraftingMastery'>Unlock All Crafting Mastery</button>
+                <button style="margin: 5px;" class="button is-rounded is-warning is-small" id='allRuneCraftingMastery'>Unlock All Runecrafting Mastery</button>
+                <button style="margin: 5px;" class="button is-rounded is-warning is-small" id='allHerbloreMastery'>Unlock All Herblore Mastery</button>
+            </div>
+            <hr>
+            <br>
+            <div class="tabs is-centered is-small">
+                <ul>
+                    <li class="is-active"><a>Add Custom Item</a></li>
+                </ul>
+            </div>
+            <br>
+            <div class="container has-text-centered" id="Items">
+                <!--Add Item to bank use this website for item id's https://wiki.melvoridle.com/index.php?title=Table_of_Items-->
+                <div class="field">
+                    <label class="label" style="color: white;">Item ID:</label>
+                    <input class="input" id='idInput' placeholder="465">
+                </div>
+                <div class="field">
+                    <label class="label" style="color: white;">Quantity:</label>
+                    <input class="input" id='idQuantity' placeholder="4">
+                </div>
+                <div class="field">
+                    <button style="margin: 5px;" class="button is-rounded is-primary is-small" id='addToBank'>Add To Bank</button>
+                    <button style="margin: 5px;" class="button is-rounded is-info is-small" id='wiki'>Item IDs</button>
+                </div>
+            </div>
+            <hr>
+            <div class="has-text-centered">
+                <br>
+                <p class="subtitle" style="font-size: smaller;">
+                    Source: <a style="color: rgb(119, 119, 255); font-size: smaller;" href="https://github.com/Rustybalboadev/MelvorTrainer">RustyBalboa</a> <br>
+                    JS: <a style="color: rgb(119, 119, 255); font-size: smaller;" href="https://github.com/Rustybalboadev">RustyBalboa</a> <br>
+                    CSS: <a style="color: rgb(119, 119, 255); font-size: smaller;" href="https://github.com/M4cs">M4cs</a>
+                </p>
+                <br>
+            </div>
+        </section>
         <script src='popup.js'></script>
     </body>
 </html>
