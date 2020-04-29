@@ -1,6 +1,9 @@
 # MelverTrainer
 ### Chrome Extension to cheat [Melvor Idle Browser Game](https://melvoridle.com/)<br>
-### Installation:<img align="right" width="100" height="100" src="https://raw.githubusercontent.com/RustyBalboadev/MelvorTrainer/master/icon/logo.png">
+
+### Easy Installation: [link to extension](https://chrome.google.com/webstore/detail/melvortrainer/opfjiinhldoaonbjidlpmjepgladiilp)
+
+### Manual Installation:<img align="right" width="100" height="100" src="https://raw.githubusercontent.com/RustyBalboadev/MelvorTrainer/master/icon/logo.png">
 * Go to Releases and download the Extension or Download it from [Here](https://github.com/RustyBalboadev/MelvorTrainer/releases/download/1.0/MelvorTrainer.crx)
 * Open the extension and add it to Chrome
 * Go to https://melvoridle.com or Click the Icon in the top of the Extension Popup and Start Winning!
