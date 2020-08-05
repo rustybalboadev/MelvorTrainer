@@ -1,3 +1,4 @@
+<!DOCTYPE HTML>
 <!--helloGuys MonkeyMan-->
 <html>
     <head>
@@ -7,102 +8,108 @@
     <body>
         <section class="hero is-dark is-bold">
             <div class="container has-text-centered">
-                <br>
-                <a href="https://melvoridle.com"><img src="icon/logo.png" width="46px" height="46px" alt="Open MelvorIdle"></a>
-                <br><br>
+               <div style="margin: 10px;">
+            	<a href="https://melvoridle.com" target="_blank"><img src="icon/logo.png" width="46px" height="46px" alt="Open MelvorIdle"></a>
+               </div>
             </div>
             <hr>
-            <div class="tabs is-centered is-small">
-                <ul>
-                    <li class="is-active"><a>Bank</a></li>
-                </ul>
-            </div>
-            <div class="container has-text-centered" style="padding-left: 10px; padding-right: 10px;" id="Bank">
-                <p class="subtitle" style="font-size: small;">Warning: These do not save online! You must purchase things from the store and they will save.</p>
-                <button style="margin: 5px;" class="button is-rounded is-info is-small" id='addTenThousandSC'>Add 10,000 SlayerCoins</button>
-                <button style="margin: 5px;" class="button is-rounded is-info is-small" id='addTenThousandGP'>Add 10,000 GP</button>
-                <button style="margin: 5px;" class="button is-rounded is-info is-small" id='bankSlots'>Give Many Bank Slots</button>
-            </div>
-            <hr>
-            <br>
-            <div class="tabs is-centered is-small">
-                <ul>
-                    <li class="is-active"><a>Skills</a></li>
-                </ul>
-            </div>
-            <br>
-            <div class="container has-text-centered" style="padding-left: 10px; padding-right: 10px;" id="Skills">
-                <!--Unlock Everything in the tab-->
-                <button style="margin: 5px;" class="button is-rounded is-primary is-small" id='allUnlockWoodCutting'>Unlock All WoodCutting</button>
-                <button style="margin: 5px;" class="button is-rounded is-primary is-small" id='allUnlockFishing'>Unlock All Fishing</button>
-                <button style="margin: 5px;" class="button is-rounded is-primary is-small" id='allUnlockFireMaking'>Unlock All FireMaking</button>
-                <button style="margin: 5px;" class="button is-rounded is-primary is-small" id='allUnlockCooking'>Unlock All Cooking</button>
-                <button style="margin: 5px;" class="button is-rounded is-primary is-small" id='allUnlockMining'>Unlock All Mining</button>
-                <button style="margin: 5px;" class="button is-rounded is-primary is-small" id='allUnlockSmithing'>Unlock All Smithing</button>
-                <button style="margin: 5px;" class="button is-rounded is-primary is-small" id='allUnlockThieving'>Unlock All Thieving</button>
-                <button style="margin: 5px;" class="button is-rounded is-primary is-small" id='allUnlockFarming'>Unlock All Farming</button>
-                <button style="margin: 5px;" class="button is-rounded is-primary is-small" id='allUnlockFletching'>Unlock All Fletching</button>
-                <button style="margin: 5px;" class="button is-rounded is-primary is-small" id='allUnlockCrafting'>Unlock All Crafting</button>
-                <button style="margin: 5px;" class="button is-rounded is-primary is-small" id='allUnlockRunecrafting'>Unlock All Runecrafting</button>
-                <button style="margin: 5px;" class="button is-rounded is-primary is-small" id='allUnlockHerblore'>Unlock All Herblore</button>
+            <div class="container has-text-centered">
+				<div>
+					<p style="font-size: xx-large;">Cheats</p>
+				</div>
+				<div>
+					<p>Wait for the enemy HP to appear before pressing this button.</p>
+					<button style="margin: 5px;" class="button is-rounded is-primary is-small" id='instaKill'>InstaKill</button>
+					<hr>
+					<p style="font-size: medium;">Warning:</p>
+					<p>These do not save online! You must purchase things from the store and they will save.</p>
+					<ul>
+						<label for="amount">Amount to add (don't go too crazy.)</label>
+						<input type="number" id="amount" name="amount" pattern="[0-9]{1,7}" min="1" max="9999999" placeholder="Digits only">
+						<li><button style="margin: 5px;" class="button is-rounded is-info is-small" id='addSC'>Add SlayerCoins</button></li>
+						<li><button style="margin: 5px;" class="button is-rounded is-info is-small" id='addGP'>Add GP</button></li>
+						<li><button style="margin: 5px;" class="button is-rounded is-info is-small" id='addBS'>Add Bank Slots</button></li>
+					</ul>
+				</div>
             </div>
             <hr>
-            <br>
-            <div class="tabs is-centered is-small">
-                <ul>
-                    <li class="is-active"><a>Mastery</a></li>
-                </ul>
-            </div>
-            <br>
-            <div class="container has-text-centered" id="Mastery">
-                <!--Unlock Masterys-->
-                <button style="margin: 5px;" class="button is-rounded is-warning is-small" id='allTreeMastery'>Unlock All Tree Mastery</button>
-                <button style="margin: 5px;" class="button is-rounded is-warning is-small" id='allFishMastery'>Unlock All Fish Mastery</button>
-                <button style="margin: 5px;" class="button is-rounded is-warning is-small" id='allCookingMastery'>Unlock All Cooking Mastery</button>
-                <button style="margin: 5px;" class="button is-rounded is-warning is-small" id='allFireMakingMastery'>Unlock All FireMaking Mastery</button>
-                <button style="margin: 5px;" class="button is-rounded is-warning is-small" id='allMiningMastery'>Unlock All Mining Mastery</button>
-                <button style="margin: 5px;" class="button is-rounded is-warning is-small" id='allSmithingMastery'>Unlock All Smithing Mastery</button>
-                <button style="margin: 5px;" class="button is-rounded is-warning is-small" id='allThievingMastery'>Unlock All Thieving Mastery</button>
-                <button style="margin: 5px;" class="button is-rounded is-warning is-small" id='allFarmingMastery'>Unlock All Farming Mastery</button>
-                <button style="margin: 5px;" class="button is-rounded is-warning is-small" id='allFletchingMastery'>Unlock All Fletching Mastery</button>
-                <button style="margin: 5px;" class="button is-rounded is-warning is-small" id='allCraftingMastery'>Unlock All Crafting Mastery</button>
-                <button style="margin: 5px;" class="button is-rounded is-warning is-small" id='allRuneCraftingMastery'>Unlock All Runecrafting Mastery</button>
-                <button style="margin: 5px;" class="button is-rounded is-warning is-small" id='allHerbloreMastery'>Unlock All Herblore Mastery</button>
-            </div>
+            <div class="container has-text-centered">
+				<p style="font-size: xx-large;">Skills</p>
+				<!--Unlock Levels-->
+				<p class="subtitle" style="font-size: medium;">This section requires you to save and refresh the page to see the results OR gain exp to update.</p>
+				<lable style="font-size: small;" for="skillChoice">Choose a skill to add EXP:</lable><br>
+				<select style="margin: 10px;" name="skillChoice" id="skillChoice">
+					<option value="Attack">Attack</option>
+					<option value="Strength">Strength</option>
+					<option value="Defence">Defence</option>
+					<option value="Hitpoints">Hitpoints</option>
+					<option value="Ranged">Ranged</option>
+					<option value="Magic">Magic</option>
+					<option value="Prayer">Prayer</option>
+					<option value="Slayer">Slayer</option>
+					<option value="Cooking">Cooking</option>
+					<option value="Crafting">Crafting</option>
+					<option value="Farming">Farming</option>
+					<option value="Firemaking">Firemaking</option>
+					<option value="Fishing">Fishing</option>
+					<option value="Fletching">Fletching</option>
+					<option value="Herblore">Herblore</option>
+					<option value="Mining">Mining</option>
+					<option value="Runecrafting">Runecrafting</option>
+					<option value="Smithing">Smithing</option>
+					<option value="Thieving">Thieving</option>
+					<option value="Woodcutting">Woodcutting</option>
+				</select>
+				<button style="margin: 5px;" class="button is-rounded is-primary is-small" id="addEXP">Add EXP</button>
+			</div>
             <hr>
-            <br>
-            <div class="tabs is-centered is-small">
-                <ul>
-                    <li class="is-active"><a>Add Custom Item</a></li>
-                </ul>
-            </div>
-            <br>
-            <div class="container has-text-centered" id="Items">
-                <!--Add Item to bank use this website for item id's https://wiki.melvoridle.com/index.php?title=Table_of_Items-->
-                <div class="field">
-                    <label class="label" style="color: white;">Item ID:</label>
-                    <input class="input" id='idInput' placeholder="465">
-                </div>
-                <div class="field">
-                    <label class="label" style="color: white;">Quantity:</label>
-                    <input class="input" id='idQuantity' placeholder="4">
-                </div>
-                <div class="field">
-                    <button style="margin: 5px;" class="button is-rounded is-primary is-small" id='addToBank'>Add To Bank</button>
-                    <button style="margin: 5px;" class="button is-rounded is-info is-small" id='wiki'>Item IDs</button>
-                </div>
+            <div class="container has-text-centered">
+					<p style="font-size: xx-large;">Mastery</p>
+					<!--Unlock Masterys-->
+					<p class="subtitle" style="font-size: medium;">This section requires you to save and refresh the page to see the results.</p>
+					<lable style="font-size: small;" for="skillMastery">Choose a skill Mastery to unlock 100%:</lable>
+					<select style="margin: 10px;" name="skillMastery" id="skillMastery">
+						<option value="cookingMastery">Cooking</option>
+						<option value="craftingMastery">Crafting</option>
+						<option value="farmingMastery">Farming</option>
+						<option value="logsMastery">Firemaking</option>
+						<option value="fishMastery">Fishing</option>
+						<option value="fletchingMastery">Fletching</option>
+						<option value="herbloreMastery">Herblore</option>
+						<option value="miningOreMastery">Mining</option>
+						<option value="runecraftingMastery">Runecrafting</option>
+						<option value="smithingMastery">Smithing</option>
+						<option value="thievingMastery">Thieving</option>
+						<option value="treeMasteryData">Woodcutting</option>
+					</select>
+					<button style="margin: 5px;" class="button is-rounded is-primary is-small" id="unlockSkillMastery">Unlock Mastery</button>
+			</div>
+            <hr>
+            <div class="container has-text-centered">
+				<p style="font-size: xx-large;">Add Custom item</p>
+				<div id="Items">
+					<!--Add Item to bank use this website for item id's https://wiki.melvoridle.com/index.php?title=Table_of_Items-->
+					<div class="field">
+						<label for="idInput">Item ID:</label>
+						<input type="number" class="input" id='idInput' pattern="[0-9]{1,4}" min="1" max="9999999" placeholder="465">
+					</div>
+					<div class="field">
+						<label for="idQuantity">Quantity:</label>
+						<input type="number" class="input" id='idQuantity' pattern="[0-9]{1,12}" min="1" max="999999999999" placeholder="4">
+					</div>
+					<button style="margin: 5px;" class="button is-rounded is-primary is-small" id='addToBank'>Add To Bank</button>
+					<button style="margin: 5px;" class="button is-rounded is-info is-small" id='wiki'>Item IDs</button>
+				</div>
             </div>
             <hr>
             <div class="has-text-centered">
-                <br>
-                <p class="subtitle" style="font-size: smaller;">
-                    Source: <a style="color: rgb(119, 119, 255); font-size: smaller;" href="https://github.com/Rustybalboadev/MelvorTrainer">RustyBalboa</a> <br>
-                    JS: <a style="color: rgb(119, 119, 255); font-size: smaller;" href="https://github.com/Rustybalboadev">RustyBalboa</a> <br>
-                    CSS: <a style="color: rgb(119, 119, 255); font-size: smaller;" href="https://github.com/M4cs">M4cs</a>
-                </p>
-                <br>
+                <p style="font-size: xx-large;">Credits</p>
+				Source: <a style="color: rgb(119, 119, 255); font-size: smaller;" href="https://github.com/Rustybalboadev/MelvorTrainer" target="_blank">RustyBalboa</a> <br>
+				JS: <a style="color: rgb(119, 119, 255); font-size: smaller;" href="https://github.com/Rustybalboadev" target="_blank">RustyBalboa</a> <br>
+				CSS: <a style="color: rgb(119, 119, 255); font-size: smaller;" href="https://github.com/M4cs" target="_blank">M4cs</a> <br>
+				Tweaked further by: <a style="color: rgb(119, 119, 255); font-size: smaller;" href="https://github.com/guanhaowu" target="_blank">Guan Hao Wu</a>
             </div>
         </section>
-        <script src='popup.js'></script>
+		<script src='popup.js'></script>
     </body>
 </html>
